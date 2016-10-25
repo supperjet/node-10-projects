@@ -1,0 +1,16 @@
+extends layout
+
+block content
+  .container
+    .col-md-3
+    .col-md-6
+      h1 Login
+      form(method='post', action='/users/login',entype='multipart/form-data')
+          .form-group
+              label Username
+              input.form-control(name='name', type='text', placeholder='Enter name')
+          .form-group
+              label Password
+              input.form-control(name='password', type='password', placeholder='Enter password')
+          input.btn.btn-success.pull-left(name='submit', type='submit' value="Login")
+      .col-md-3     

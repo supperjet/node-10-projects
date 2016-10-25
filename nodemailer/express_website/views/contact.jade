@@ -1,0 +1,26 @@
+extends layout
+
+block content
+      .container.contact
+          .col-md-3
+          .col-md-6
+            form(action='contact/send', method='post')
+              fieldset
+                h1 Contact us
+                .form-group
+                  label(for='Name') Name
+                  input.form-control(type='text', name='name', placeholder='Enter name')
+                .form-group
+                  label(for='Email') Email
+                  input.form-control(type='Email', name='email', placeholder='Enter email')
+                .form-group
+                  label(for='Message') Message
+                  textarea.form-control(name="message", placeholder="Enter you message") 
+                .checkbox
+                  label
+                    input(type='checkbox')
+                    | remember password
+                button.btn.btn-success(type='submit') submit
+          .col-md-3
+
+          
